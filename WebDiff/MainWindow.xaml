@@ -1,0 +1,20 @@
+﻿<Window x:Class="WebDiff.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebDiff"
+        mc:Ignorable="d"
+        Title="WebDiff" Height="450" Width="750">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="5,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" MaxWidth="340"
+Text="List the websites to poll here. To add a new address, select the empty line and paste the URL.
+To remove an address, select the line and press the Delete button."/>
+        <DataGrid x:Name="websites" HorizontalAlignment="Left" Width="350" IsManipulationEnabled="True" Margin="0,58,0,35"/>
+        <Button Content="Update websites" HorizontalAlignment="Left" Margin="125,0,0,10" Width="100" VerticalAlignment="Bottom" Click="Update"/>
+
+        <TextBlock Margin="360,5,5,0" TextWrapping="Wrap" VerticalAlignment="Top"
+Text="This is the list of all polled updates. Double click a line to open the difference."/>
+        <DataGrid x:Name="diffList" Margin="355,58,0,0" IsReadOnly="True" MouseDoubleClick="OpenDiff"/>
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Authors>VoidX</Authors>
+    <Description>Gets changes on websites by polling. Ideal for listing updates.</Description>
+  </PropertyGroup>
+</Project>
